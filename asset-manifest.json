@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/fullstack-portfolio-template/static/css/main.c1e48118.css",
+    "main.js": "/fullstack-portfolio-template/static/js/main.c1584a6c.js",
+    "static/js/453.c980083f.chunk.js": "/fullstack-portfolio-template/static/js/453.c980083f.chunk.js",
+    "static/media/mock03.png": "/fullstack-portfolio-template/static/media/mock03.0257e5f30290d24f44d8.png",
+    "static/media/mock11.png": "/fullstack-portfolio-template/static/media/mock11.aa256df492ca9192b198.png",
+    "static/media/Myprofile.jpeg": "/fullstack-portfolio-template/static/media/Myprofile.59f75565f1042bf22dfb.jpeg",
+    "static/media/mock09.png": "/fullstack-portfolio-template/static/media/mock09.9a317efec6efee69a4e8.png",
+    "static/media/mock_employee.png": "/fullstack-portfolio-template/static/media/mock_employee.e9d3e41e451e37707b28.png",
+    "static/media/mock_fakenews.png": "/fullstack-portfolio-template/static/media/mock_fakenews.227186e96b1280721b4f.png",
+    "static/media/mock10.png": "/fullstack-portfolio-template/static/media/mock10.9bc6028bd12c134a5b0e.png",
+    "static/media/bg-light.png": "/fullstack-portfolio-template/static/media/bg-light.bac0efb485244a522981.png",
+    "static/media/bg-dark.png": "/fullstack-portfolio-template/static/media/bg-dark.f420c6b8458af72de935.png",
+    "index.html": "/fullstack-portfolio-template/index.html",
+    "main.c1e48118.css.map": "/fullstack-portfolio-template/static/css/main.c1e48118.css.map",
+    "main.c1584a6c.js.map": "/fullstack-portfolio-template/static/js/main.c1584a6c.js.map",
+    "453.c980083f.chunk.js.map": "/fullstack-portfolio-template/static/js/453.c980083f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c1e48118.css",
+    "static/js/main.c1584a6c.js"
+  ]
+}
