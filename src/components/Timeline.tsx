@@ -92,8 +92,8 @@ function Timeline() {
             iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
-            <h3 className="vertical-timeline-element-title">Vital Axis Pvt Ltd </h3>
-            <h4 className="vertical-timeline-element-subtitle">Bangalore, India</h4>
+            <h3 className="vertical-timeline-element-title">Full Stack Developer</h3>
+            <h4 className="vertical-timeline-element-subtitle">Vital Axis Pvt Ltd | Bangalore, India</h4>
             <div className="timeline-details">
             <ul>
                 <li>Delivered scalable healthcare applications by developing and deploying ASP.NET MVC frameworks with SQL Server and Entity Framework, supporting over 1,000 concurrent users with high availability.</li>
