@@ -1,62 +1,52 @@
 import React from "react";
-import '@fortawesome/free-regular-svg-icons'
+// Added specific solid icons relevant to the new categories
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faReact, faDocker, faPython } from '@fortawesome/free-brands-svg-icons';
-import { faDatabase, faChartLine, faCube, faProjectDiagram, faChartBar } from '@fortawesome/free-solid-svg-icons';
+import { 
+    faDatabase, 
+    faCloud, 
+    faCode, 
+    faTerminal, 
+    faCogs, 
+    faProjectDiagram 
+} from '@fortawesome/free-solid-svg-icons';
 import Chip from '@mui/material/Chip';
 import '../assets/styles/Expertise.scss';
 import { motion } from "framer-motion";
 
-const labelsFirst = [
-    "Snowflake",
-    "MySQL",
-    "PostgreSQL",
-    "MongoDB"
+// --- Updated Skill Data based on user's list ---
+
+const languages = [
+    "JavaScript", "TypeScript", "Python", "C#", "SQL", "HTML5", "CSS3", "Bash"
 ];
 
-const labelsSecond = [
-  "Causal Inference",
-  "Predictive Modelling",
-  "A/B Testing",
-  "Time Series Analysis",
-  "Feature Engineering",
-  "Data Standardization",
-  "Product Analytics",
-  "Model Optimization",
-  "Model Training",
+const frontEnd = [
+    "Angular 10+", "Bootstrap", "RxJS", "Responsive Design"
 ];
 
-
-const labelsThird = [
-    "Python",
-    "C++",
-    "C",
-    "R",
-    "SQL",
-];
-const labelsFourth = [
-  "NumPy",
-  "Pandas",
-  "Scikit-learn",
-  "TensorFlow",
-  "PyTorch",
-  "PySpark",
+const backEnd = [
+    "ASP.NET Core", "Node.js", "Flask", "REST API Development", "Microservices"
 ];
 
-const labelsFifth = [
-  "Apache Spark",
-  "Apache Kafka",
-  "dbt",
-  "ETL Pipelines",
-  "Docker",
-  "Terraform",
+const databases = [
+    "PostgreSQL", "MySQL", "MongoDB", "Azure SQL", "Snowflake"
 ];
-const labelsSixth = [
-  "Tableau",
-  "Power BI",
-  "Seaborn",
-  "Matplotlib",
+
+const cloudDevOps = [
+    "AWS (Lambda, S3, EC2)", "Azure (App Services, Data Factory)", "Docker", "Kubernetes", "Jenkins", "Azure DevOps", "Git", "CI/CD Pipelines"
 ];
+
+const dataEngineering = [
+    "Kafka", "PySpark", "Hadoop (basic)", "ETL Pipelines"
+];
+
+const coreConcepts = [
+    "API Design", "Authentication & Authorization", "Unit Testing", "Agile/Scrum"
+];
+
+const toolsReporting = [
+    "Postman", "Swagger", "JIRA", "Visual Studio", "Power BI", "Tableau"
+];
+
 
 function Expertise() {
     return (
@@ -64,16 +54,18 @@ function Expertise() {
         <div className="skills-container">
             <h1>Expertise</h1>
             <div className="skills-grid">
+                
+                {/* 1. Programming Languages & Scripting */}
                 <div className="skill">
-                    <FontAwesomeIcon icon={faDatabase} size="3x"/>
+                    <FontAwesomeIcon icon={faTerminal} size="3x"/>
                     <h3 className="gradient-heading">
-                      Database and Cloud Technologies </h3>
+                      Programming Languages & Scripting
+                    </h3>
                     <div className="space-y-2 text-gray-900 dark:text-gray-100"> 
                         {[
-                             "Designed and optimized databases using SQL and NoSQL systems such as MySQL, PostgreSQL, and MongoDB.",
-                             "Developed, managed, and deployed scalable applications on AWS and Azure cloud environments.",
-                             "Leveraged cloud services for storage, compute, and automation to enhance performance and reliability.",
-                             "Implemented best practices in data management and system design to ensure security, scalability, and efficiency."
+                             "Proficient in compiled (C#) and scripting (Python, JS/TS) languages, focusing on efficient and scalable code.",
+                             "Strong command of SQL for complex data query and manipulation across various platforms.",
+                             "Utilize Bash for scripting, automation, and streamlining DevOps workflows."
                             ] .map((text, index) => (
                             <motion.p
                             key={index}
@@ -85,95 +77,106 @@ function Expertise() {
                                 {text}
                                 </motion.p>
                             ))}
-
                     </div>
                     <div className="flex-chips">
-                        <span className="chip-title">Tech stack:</span>
-                        {labelsFirst.map((label, index) => (
+                        <span className="chip-title">Languages:</span>
+                        {languages.map((label, index) => (
                             <Chip key={index} className='chip' label={label} />
                         ))}
                     </div>
                 </div>
 
-
-
+                {/* 2. Full-Stack & API Development */}
                 <div className="skill">
-                    <FontAwesomeIcon icon={faChartLine} size="3x" />
+                    <FontAwesomeIcon icon={faCode} size="3x" />
                          <h3 className="gradient-heading">
-                            Data Science & Analytics</h3>
-                            <p>  Skilled in uncovering insights and driving data-informed decisions through statistical analysis, 
-                                predictive modeling, and experimentation. Experienced in feature engineering, model training, and 
-                                optimization for real-world applications including product analytics and time-series forecasting.
-                                </p>
-                                <div className="flex-chips">
-                                    <span className="chip-title">Core areas:</span>
-                                    {labelsSecond.map((label, index) => (
-                                        <Chip key={index} className="chip" label={label} />
-                                        ))}
-                                </div>
-                    </div>
+                            Full-Stack & API Development
+                        </h3>
+                        <p>
+                            Experienced in building end-to-end applications, specializing in Angular for dynamic UIs and robust backend frameworks like ASP.NET Core, Node.js, and Flask for scalable REST API and Microservices architecture.
+                        </p>
+                        <div className="flex-chips">
+                            <span className="chip-title">Frontend:</span>
+                            {frontEnd.map((label, index) => (
+                                <Chip key={index} className="chip" label={label} />
+                            ))}
+                        </div>
+                        <div className="flex-chips">
+                            <span className="chip-title">Backend:</span>
+                            {backEnd.map((label, index) => (
+                                <Chip key={index} className="chip" label={label} />
+                            ))}
+                        </div>
+                </div>
 
-
-
+                {/* 3. Data Persistence & Databases */}
                 <div className="skill">
-                    <FontAwesomeIcon icon={faPython} size="3x"/>
+                    <FontAwesomeIcon icon={faDatabase} size="3x"/>
                     <h3 className="gradient-heading">
-                        Programming Languages</h3>
-                    <p>Proficient in multiple programming languages including Python, C++, C, R and SQL.
-                       I focus on writing clean, efficient, and scalable code for applications across different domains.</p>
+                        Data Persistence & Databases
+                    </h3>
+                    <p>
+                        Proficient in designing, optimizing, and maintaining relational (PostgreSQL, MySQL, Azure SQL) and NoSQL (MongoDB) data stores. Experienced with modern cloud data warehousing using Snowflake.
+                    </p>
                     <div className="flex-chips">
-                        <span className="chip-title">Tech stack:</span>
-                        {labelsThird.map((label, index) => (
+                        <span className="chip-title">Platforms:</span>
+                        {databases.map((label, index) => (
                             <Chip key={index} className='chip' label={label} />
                         ))}
                     </div>
                 </div>
 
 
-
+                {/* 4. Cloud Infrastructure & DevOps */}
                 <div className="skill">
-                    <FontAwesomeIcon icon={faCube} size="3x" />
+                    <FontAwesomeIcon icon={faCloud} size="3x" />
                      <h3 className="gradient-heading">
-                        Frameworks & Libraries</h3>
+                        Cloud Infrastructure & DevOps
+                    </h3>
                      <p>
-                        Experienced in leveraging powerful data science and machine learning frameworks 
-                        for building, training, and deploying high-performance analytical models and pipelines.
+                        Expertise in multi-cloud environments (AWS & Azure), leveraging serverless computing and infrastructure as code. Strong focus on containerization (Docker, Kubernetes) and implementing robust CI/CD pipelines.
                          </p>
                          <div className="flex-chips">
-                            <span className="chip-title">Libraries:</span>
-                            {labelsFourth.map((label, index) => (
+                            <span className="chip-title">Tech stack:</span>
+                            {cloudDevOps.map((label, index) => (
                                 <Chip key={index} className="chip" label={label} />))}
                          </div>
                 </div>
 
-
+                {/* 5. Big Data & Data Engineering */}
                 <div className="skill">
                     <FontAwesomeIcon icon={faProjectDiagram} size="3x" />
                     <h3 className="gradient-heading">
-                        Big Data & Data Engineering</h3>
+                        Big Data, Streaming & ETL
+                    </h3>
                     <p>
-                        Experienced in building scalable data pipelines and engineering solutions using big data technologies. 
-                        Skilled in streaming, batch processing, ETL workflows, containerization, and infrastructure automation.
+                        Skilled in processing and analyzing large datasets using PySpark and basic Hadoop. Experience with real-time data streaming via Kafka and designing efficient, scalable ETL pipelines.
                         </p>
                         <div className="flex-chips">
-                        <span className="chip-title">Tech stack:</span>
-                        {labelsFifth.map((label, index) => (
+                        <span className="chip-title">Platforms:</span>
+                        {dataEngineering.map((label, index) => (
                             <Chip key={index} className="chip" label={label} />))}
                         </div>
                 </div>
 
 
+                {/* 6. Tools & Core Concepts */}
                 <div className="skill">
-                    <FontAwesomeIcon icon={faChartBar} size="3x" />
+                    <FontAwesomeIcon icon={faCogs} size="3x" />
                     <h3 className="gradient-heading">
-                        Visualization & Reporting</h3>
+                        Core Concepts & Tools
+                    </h3>
                     <p>
-                        Skilled in transforming complex datasets into intuitive visual insights. Experienced in creating dashboards 
-                        and reports using Tableau, Power BI, and Python visualization libraries for data-driven decision making.
+                        A strong foundation in software development principles (Unit Testing, Agile/Scrum) and application architecture (API Design, Auth). Proficient with development, testing, and reporting tools.
                         </p>
                         <div className="flex-chips">
-                            <span className="chip-title">Tools:</span>
-                            {labelsSecond.map((label, index) => (
+                            <span className="chip-title">Concepts:</span>
+                            {coreConcepts.map((label, index) => (
+                                <Chip key={index} className="chip" label={label} />))}
+                        </div>
+                        <div className="flex-chips">
+                            <span className="chip-title">Tools/Reporting:</span>
+                            {toolsReporting.map((label, index) => (
                                 <Chip key={index} className="chip" label={label} />))}
                         </div>
                 </div>
@@ -185,4 +188,3 @@ function Expertise() {
     );
 }
 export default Expertise;
-

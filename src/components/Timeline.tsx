@@ -24,7 +24,7 @@ function Timeline() {
             <h3 className="vertical-timeline-element-subtitle"> Abraira Lab, Rutgers Universit | New Brunswick, NJ.</h3>
             <div className="timeline-details">
               <ul>
-                <li>DApplied machine learning and data analytics to spinal cord injury research, assisting in behavioral data modeling and visualization.</li> 
+                <li>Applied machine learning and data analytics to spinal cord injury research, assisting in behavioral data modeling and visualization.</li> 
                 <li>Automated data preprocessing pipelines and supported neural activity analysis to improve research efficiency and reproducibility.</li>
                 </ul>
              </div>
@@ -93,7 +93,7 @@ function Timeline() {
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
             <h3 className="vertical-timeline-element-title">Vital Axis Pvt Ltd </h3>
-            <h4 className="vertical-timeline-element-subtitle">TBangalore, India</h4>
+            <h4 className="vertical-timeline-element-subtitle">Bangalore, India</h4>
             <div className="timeline-details">
             <ul>
                 <li>Delivered scalable healthcare applications by developing and deploying ASP.NET MVC frameworks with SQL Server and Entity Framework, supporting over 1,000 concurrent users with high availability.</li>

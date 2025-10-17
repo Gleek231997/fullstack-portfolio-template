@@ -19,7 +19,7 @@ function Main() {
             <a href="https://www.linkedin.com/in/glory-ekbote/" target="_blank" rel="noreferrer"><LinkedInIcon/></a>
           </div>
           <h1>Glory Ekbote</h1>
-          <p>Aspiring Data Scientist | Data Analyst</p>
+          <p>Full Stack Developer</p>
 
           <div className="mobile_social_icons">
             <a href="https://github.com/Gleek231997" target="_blank" rel="noreferrer"><GitHubIcon/></a>
